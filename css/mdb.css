@@ -8592,3 +8592,65 @@ footer.page-footer .footer-socials .btn-floating {
 
 .cafe-lp .streak.streak-md {
   height: auto; }
+  .culinary .nav-link,
+.model .nav-link,
+.developer .nav-link,
+.designer .nav-link,
+.architect .nav-link,
+.legal .nav-link,
+.agency .nav-link {
+  padding: 0.5em 0.5em; }
+
+.culinary .font-bold,
+.model .font-bold,
+.developer .font-bold,
+.designer .font-bold,
+.architect .font-bold,
+.legal .font-bold,
+.agency .font-bold {
+  font-weight: 500; }
+
+.culinary .hm-black-strong .mask,
+.culinary .hm-black-strong .full-bg-img,
+.architect .hm-black-strong .mask,
+.architect .hm-black-strong .full-bg-img,
+.legal .hm-black-strong .mask,
+.legal .hm-black-strong .full-bg-img {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.culinary .navbar,
+.model .navbar {
+  background-color: #7d8488; }
+  .culinary .navbar:not(.top-nav-collapse),
+  .model .navbar:not(.top-nav-collapse) {
+    background-color: transparent; }
+  @media (max-width: 768px) {
+    .culinary .navbar:not(.top-nav-collapse),
+    .model .navbar:not(.top-nav-collapse) {
+      background: #7d8488; } }
+  @media (min-width: 769px) {
+    .culinary .navbar:not(.top-nav-collapse),
+    .model .navbar:not(.top-nav-collapse) {
+      box-shadow: none; } }
+
+.model .section hr,
+.agency .section hr,
+.designer .section hr {
+  display: block; }
+
+.legal .navbar,
+.developer .navbar,
+.architect .navbar {
+  background-color: #444444; }
+
+.designer .blue-grey-text,
+.architect .blue-grey-text {
+  color: #53535c !important; }
+
+.culinary .streak1 {
+  height: 150px; }
+
+.culinary .btn-secondary {
+  background: #90CAF9 !important; }
+  .culinary .btn-secondary:hover, .culinary .btn-secondary:focus {
+    background-color: #64a2d3 !important; }
