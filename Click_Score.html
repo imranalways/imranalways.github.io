@@ -9,11 +9,38 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="../../css/mdb.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom scripts -->
   <style type="text/css">
+   #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      /* change if the mask should have another color then white */
+      z-index: 99;
+      /* makes sure it stays on top */
+    }
+
+    #status {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      /* centers the loading animation horizontally one the screen */
+      top: 50%;
+      /* centers the loading animation vertically one the screen */
+      background-image: url(img/lightbox/Star-Loading-Image.gif);
+      /* path to your loading animation */
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: -100px 0 0 -100px;
+      /* is width and height divided by two */
+    }
 
   </style>
 </head>
@@ -67,7 +94,9 @@
 
     </nav>
     <!-- Navbar -->
-
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
     <!-- <section>
       <div class="">
         <img src="https://mdbootstrap.com/img/Photos/Others/nature4.jpg" style="width: 100%">
@@ -129,28 +158,28 @@
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#1</span> <span style="font-style: italic;">- Home Page</span>
                           <center>
-                            <img src="../../img/projects/Click&Score/jmg.png"
+                            <img src="img/projects/Click&Score/jmg.png"
                               class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Home Page">
                           </center>
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#2</span> <span style="font-style: italic;">- Game Playing Interface</span> 
                           <center>
-                            <img src="../../img/projects/Click&Score/jmg2.png"
+                            <img src="img/projects/Click&Score/jmg2.png"
                               class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Game Playing Interface">
                           </center>
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#3</span> <span style="font-style: italic;">- Score Showing Page</span> 
                           <center>
-                            <img src="../../img/projects/Click&Score/jmg3.png"
+                            <img src="img/projects/Click&Score/jmg3.png"
                               class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Score Showing Page">
                           </center>
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#4</span> <span style="font-style: italic;">- Best Score Display Page</span> 
                           <center>
-                            <img src="../../img/projects/Click&Score/jmg4.png"
+                            <img src="img/projects/Click&Score/jmg4.png"
                               class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Best Score Display Page">
                           </center>
                         </div>
@@ -214,7 +243,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/angularLogo.png"
+                                            <img src="img/projects/angularLogo.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -256,7 +285,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/R.png"
+                                            <img src="img/projects/R.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -296,7 +325,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/phpLogo2.png"
+                                            <img src="img/projects/phpLogo2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -347,7 +376,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -389,7 +418,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/phpLogo2.png"
+                                            <img src="img/projects/phpLogo2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -429,7 +458,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -479,7 +508,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -521,7 +550,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/java2.png"
+                                            <img src="img/projects/java2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -562,7 +591,7 @@
                         
                                          
                                           <div class="view overlay">
-                                            <img src="../../img/projects/me.jpg"
+                                            <img src="img/projects/me.jpg"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -695,13 +724,13 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="../../js/popper.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="../../js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
 
   <!-- Custom scripts -->
   <script type="text/javascript">
@@ -710,9 +739,14 @@
 
     // MDB Lightbox Init
     $(function () {
-      $("#mdb-lightbox-ui").load("../../mdb-addons/mdb-lightbox-ui.html");
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     });
-
+  
+    $(window).on('load', function() { // makes sure the whole site is loaded 
+    // $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(2000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({'overflow':'visible'});
+    })
   </script>
 
 </body>

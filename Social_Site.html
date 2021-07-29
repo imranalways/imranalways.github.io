@@ -9,12 +9,38 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="../../css/mdb.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom scripts -->
   <style type="text/css">
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      /* change if the mask should have another color then white */
+      z-index: 99;
+      /* makes sure it stays on top */
+    }
 
+    #status {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      /* centers the loading animation horizontally one the screen */
+      top: 50%;
+      /* centers the loading animation vertically one the screen */
+      background-image: url(img/lightbox/Star-Loading-Image.gif);
+      /* path to your loading animation */
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: -100px 0 0 -100px;
+      /* is width and height divided by two */
+    }
   </style>
 </head>
 
@@ -67,7 +93,9 @@
 
     </nav>
     <!-- Navbar -->
-
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
     <!-- <section>
       <div class="">
         <img src="https://mdbootstrap.com/img/Photos/Others/nature4.jpg" style="width: 100%">
@@ -127,52 +155,52 @@
                         <!-- Grid column -->
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#1</span> <span style="font-style: italic;">- Login Page</span> 
-                          <img src="../../img/projects/blog/s1.png"
+                          <img src="img/projects/blog/s1.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Login Page">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#2</span> <span style="font-style: italic;">- Signup Page</span> 
-                          <img src="../../img/projects/blog/s2.png"
+                          <img src="img/projects/blog/s2.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Signup Page">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#3</span> <span style="font-style: italic;">- Home Page Sample 1</span> 
-                          <img src="../../img/projects/blog/s3.png"
+                          <img src="img/projects/blog/s3.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Home Page">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#4</span> <span style="font-style: italic;">- Home Page Sample 2</span> 
-                          <img src="../../img/projects/blog/s4.png"
+                          <img src="img/projects/blog/s4.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Home Page sample 2">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#5</span> <span style="font-style: italic;">- Create New Post</span> 
-                          <img src="../../img/projects/blog/s5.png"
+                          <img src="img/projects/blog/s5.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Create Post">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#6</span> <span style="font-style: italic;">- Own Profile</span> 
-                          <img src="../../img/projects/blog/s6.png"
+                          <img src="img/projects/blog/s6.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Own Profile">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#7</span> <span style="font-style: italic;">- Other User's Profile</span> 
-                          <img src="../../img/projects/blog/s7.png"
+                          <img src="img/projects/blog/s7.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Other's Profile">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#8</span> <span style="font-style: italic;">- Own Profile Details</span> 
-                          <img src="../../img/projects/blog/s8.png"
+                          <img src="img/projects/blog/s8.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Own Details">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#9</span> <span style="font-style: italic;">- Edit Own Information</span> 
-                          <img src="../../img/projects/blog/s9.png"
+                          <img src="img/projects/blog/s9.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Edit Own Information">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#10</span> <span style="font-style: italic;">- Admin Accessible Report</span> 
-                          <img src="../../img/projects/blog/s10.png"
+                          <img src="img/projects/blog/s10.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Chart">
                         </div>
                         <!-- Grid column -->
@@ -235,7 +263,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/angularLogo.png"
+                                            <img src="img/projects/angularLogo.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -277,7 +305,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/R.png"
+                                            <img src="img/projects/R.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -317,7 +345,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/phpLogo2.png"
+                                            <img src="img/projects/phpLogo2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -368,7 +396,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -410,7 +438,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/phpLogo2.png"
+                                            <img src="img/projects/phpLogo2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -450,7 +478,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -500,7 +528,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -542,7 +570,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/java2.png"
+                                            <img src="img/projects/java2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -583,7 +611,7 @@
                         
                                          
                                           <div class="view overlay">
-                                            <img src="../../img/projects/me.jpg"
+                                            <img src="img/projects/me.jpg"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -716,13 +744,13 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="../../js/popper.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="../../js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
 
   <!-- Custom scripts -->
   <script type="text/javascript">
@@ -731,8 +759,14 @@
 
     // MDB Lightbox Init
     $(function () {
-      $("#mdb-lightbox-ui").load("../../mdb-addons/mdb-lightbox-ui.html");
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     });
+
+    $(window).on('load', function() { // makes sure the whole site is loaded 
+    //  $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(2000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({'overflow':'visible'});
+    })
 
   </script>
 

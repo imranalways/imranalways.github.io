@@ -9,12 +9,38 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="../../css/mdb.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom scripts -->
   <style type="text/css">
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      /* change if the mask should have another color then white */
+      z-index: 99;
+      /* makes sure it stays on top */
+    }
 
+    #status {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      /* centers the loading animation horizontally one the screen */
+      top: 50%;
+      /* centers the loading animation vertically one the screen */
+      background-image: url(img/lightbox/Star-Loading-Image.gif);
+      /* path to your loading animation */
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: -100px 0 0 -100px;
+      /* is width and height divided by two */
+    }
   </style>
 </head>
 
@@ -67,7 +93,9 @@
 
     </nav>
     <!-- Navbar -->
-
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
     <!-- <section>
       <div class="">
         <img src="https://mdbootstrap.com/img/Photos/Others/nature4.jpg" style="width: 100%">
@@ -127,52 +155,52 @@
                         <!-- Grid column -->
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#1</span> <span style="font-style: italic;">- Home Page</span> 
-                          <img src="../../img/projects/Beautiful BD/s011.png"
+                          <img src="img/projects/Beautiful BD/s011.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Home Page">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#2</span> <span style="font-style: italic;">- Summer Season Page</span> 
-                          <img src="../../img/projects/Beautiful BD/s012.png"
+                          <img src="img/projects/Beautiful BD/s012.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Summer Season Page">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#3</span> <span style="font-style: italic;">- Summer Story</span> 
-                          <img src="../../img/projects/Beautiful BD/s013.png"
+                          <img src="img/projects/Beautiful BD/s013.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Summer Story">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#4</span> <span style="font-style: italic;">- Some Photograps of Summer Season</span> 
-                          <img src="../../img/projects/Beautiful BD/s014.png"
+                          <img src="img/projects/Beautiful BD/s014.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Some Photograps of Summer Season">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#5</span> <span style="font-style: italic;">- Spring Season Page</span> 
-                          <img src="../../img/projects/Beautiful BD/s015.png"
+                          <img src="img/projects/Beautiful BD/s015.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Spring Season Page">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#6</span> <span style="font-style: italic;">- Spring Season Story</span> 
-                          <img src="../../img/projects/Beautiful BD/s016.png"
+                          <img src="img/projects/Beautiful BD/s016.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Spring Season Story">
                         </div> 
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#7</span> <span style="font-style: italic;">- Some Photograps of Spring Season</span> 
-                          <img src="../../img/projects/Beautiful BD/s017.png"
+                          <img src="img/projects/Beautiful BD/s017.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Some Photograps of Spring Season">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#8</span> <span style="font-style: italic;">- Beautiful Locations</span> 
-                          <img src="../../img/projects/Beautiful BD/s018.png"
+                          <img src="img/projects/Beautiful BD/s018.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Beautiful Locations">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#9</span> <span style="font-style: italic;">- Details About Sundarban</span> 
-                          <img src="../../img/projects/Beautiful BD/s019.png"
+                          <img src="img/projects/Beautiful BD/s019.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Details About Sundarban">
                         </div>
                         <div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.1s">
                           <span style="color:darkmagenta; padding-right:5px;">#10</span> <span style="font-style: italic;">- Details About Rangamati</span> 
-                          <img src="../../img/projects/Beautiful BD/s020.png"
+                          <img src="img/projects/Beautiful BD/s020.png"
                             class="img-fluid z-depth-1 rounded-0" alt="sample image" title="Details About Rangamati">
                         </div>
                       </div>
@@ -234,7 +262,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/angularLogo.png"
+                                            <img src="img/projects/angularLogo.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -255,7 +283,7 @@
                                               <i class="far fa-clock-o"></i> 20/04/2021</p>
                                             <p class="font-small grey-text mb-0">Angular Project</p>
                                             <p class="text-right mb-0 font-small font-weight-bold">
-                                              <a href="../postpage/Social_Site.html" target="_blank">details
+                                              <a href="Social_Site.html" target="_blank">details
                                                 <i class="fas fa-angle-right"></i>
                                               </a>
                                             </p>
@@ -276,7 +304,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/R.png"
+                                            <img src="img/projects/R.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -316,7 +344,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/phpLogo2.png"
+                                            <img src="img/projects/phpLogo2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -367,7 +395,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -409,7 +437,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/phpLogo2.png"
+                                            <img src="img/projects/phpLogo2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -449,7 +477,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -499,7 +527,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/cs.png"
+                                            <img src="img/projects/cs.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -541,7 +569,7 @@
                         
                                           <!-- Card image -->
                                           <div class="view overlay">
-                                            <img src="../../img/projects/java2.png"
+                                            <img src="img/projects/java2.png"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -582,7 +610,7 @@
                         
                                          
                                           <div class="view overlay">
-                                            <img src="../../img/projects/me.jpg"
+                                            <img src="img/projects/me.jpg"
                                               class="card-img-top" alt="sample image">
                                             <a>
                                               <div class="mask rgba-white-slight"></div>
@@ -715,13 +743,13 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="../../js/popper.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="../../js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
 
   <!-- Custom scripts -->
   <script type="text/javascript">
@@ -730,9 +758,15 @@
 
     // MDB Lightbox Init
     $(function () {
-      $("#mdb-lightbox-ui").load("../../mdb-addons/mdb-lightbox-ui.html");
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     });
 
+    
+    $(window).on('load', function() { // makes sure the whole site is loaded 
+    // $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(2000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({'overflow':'visible'});
+    })
   </script>
 
 </body>
